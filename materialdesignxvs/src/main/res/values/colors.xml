@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#004d40</color>
+    <color name="colorAccent">#ff9800</color>
+    <color name="toolbarColor">#ffffff</color>
+    <color name="gray_white_1000">#ffffff</color>
+    <color name="color_search_bg">#E5E5E5</color>
+    <color name="text_gray">#77424242</color>
+    <color name="alpha_settingbg">#77eaeaea</color>
+    <color name="movieTitleColor">#121212</color>
+</resources>

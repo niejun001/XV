@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_md_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/activity_md_coorl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray_white_1000"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/activity_md_appbar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:fitsSystemWindows="true"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/activity_md_colltl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/toolbarColor"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/gray_white_1000"
+                app:layout_scrollFlags="scroll|snap"
+                >
+
+                <ImageView
+                    android:id="@+id/activity_md_iv"
+                    android:layout_width="160dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="48dp"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    app:layout_collapseMode="parallax"
+                    app:layout_collapseParallaxMultiplier="0.7"
+                    />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/activity_md_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    />
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/activity_movie_nested"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:background="?android:colorBackground"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <LinearLayout
+                android:id="@+id/activity_md_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:colorBackground"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:padding="5dp">
+
+                <!--<TextView
+                    android:id="@+id/downandplay_tv"
+                    android:layout_width="228dp"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="22dp"
+                    android:text="TextView"/>-->
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/downandplay_tv"
+                    android:layout_width="228dp"
+                    android:layout_height="34dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="22dp"
+                    android:text="TextView"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    />
+
+                <TextView
+                    android:id="@+id/downandplay_down"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="浏览器打开"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/downandplay_play"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="本地 播放"
+                    android:textColor="#ffffffff"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

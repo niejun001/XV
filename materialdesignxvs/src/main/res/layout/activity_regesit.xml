@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/atv_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextAppearance="@style/ToolbarTextAppearanceText"
+            app:titleTextColor="@color/gray_white_1000"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="        分类，搜索，爱好为收费(10元)功能，解锁之后才能使用。未解锁只能观看主页内容。几十万部资源，应有尽有！视频每天更新，无毒无广告，安全飙车。\n使用说明：\n        点击获取注册码，按提示添加管理员QQ，支付完成提供用户名给管理员，管理员发送注册码给你，即可解锁所有功能。
+\n收费目的：\n        1、防止恶意传播；2、开发不易，多谢赞助"/>
+
+        <TextView
+            android:id="@+id/bt_get"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="获取注册码"
+            android:textColor="#ffffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="请输入用户名："/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.@/"
+                android:hint="支持英文字母数字.@/"
+                android:inputType="textUri"
+                android:maxLength="20"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/bt_save"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="确 定"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入注册码："/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:inputType="textUri|textMultiLine"
+                android:hint="确定用户名后向管理员获取"/>
+
+            <TextView
+                android:id="@+id/bt_main"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:text="解 锁"
+                android:textColor="#ffffffff"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

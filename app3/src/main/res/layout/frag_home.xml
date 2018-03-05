@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ProgressBar
+        android:id="@+id/pb_home"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/videohome_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlDragRate="0.7"
+        app:srlEnableAutoLoadmore="true"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlHeaderHeight="70dp"
+        app:srlHeaderMaxDragRate="2.5">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/videohome_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

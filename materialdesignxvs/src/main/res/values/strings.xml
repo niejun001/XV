@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">飙车</string>
+    <string name="nav_menu_home">主页</string>
+    <string name="nav_menu_categray">分类</string>
+    <string name="nav_menu_favorite">爱好</string>
+    <string name="nav_menu_system">系统</string>
+    <string name="nav_menu_ChangeSection">关于</string>
+    <string name="nav_menu_Settings">设置</string>
+    <string name="copy">点击下方复制QQ，即可复制2761215609，然后打开QQ，搜索添加，获取注册码</string>
+    <string name="nav_menu_collection">收藏</string>
+    <string name="regesit"><u>请注册</u></string>
+</resources>

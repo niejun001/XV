@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_menu_home"
+            android:checkable="true"
+            android:icon="@mipmap/home_normal"
+            android:title="@string/nav_menu_home"/>
+        <item
+            android:id="@+id/nav_menu_categray"
+            android:checkable="true"
+            android:icon="@mipmap/text_normal"
+            android:title="@string/nav_menu_categray"/>
+        <item
+            android:id="@+id/nav_menu_favorite"
+            android:checkable="true"
+            android:icon="@mipmap/favorite_normal"
+            android:title="@string/nav_menu_favorite"/>
+        <item
+            android:id="@+id/nav_menu_collection"
+            android:checkable="true"
+            android:icon="@mipmap/favorite_normal"
+            android:title="@string/nav_menu_collection"/>
+
+    </group>
+
+    <item android:title="@string/nav_menu_system">
+        <menu>
+            <item
+                android:id="@+id/nav_menu_setting"
+                android:checkable="true"
+                android:icon="@mipmap/setting"
+                android:title="@string/nav_menu_Settings"
+                />
+        </menu>
+    </item>
+</menu>
